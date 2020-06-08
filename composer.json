@@ -1,0 +1,45 @@
+{
+  "name": "smart-raya/ippanel-laravel",
+  "type": "library",
+  "description": "A simple API extension for send text message By IPPanel in Laravel",
+  "keywords": [
+    "SmartRaya",
+    "IPPanel",
+	"SMS"
+  ],
+  "support": {
+    "issues": "https://github.com/SmartRaya/IPPanel-Laravel/issues",
+    "source": "https://github.com/SmartRaya/IPPanel-Laravel/"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Keivan Sohrabloo",
+      "email": "k.sohrabloo.k@gmail.com",
+      "homepage": "http://sms.7panel.ir"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.6.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "SmartRaya\\IPPanelLaravel\\": "src/"
+    }
+  },
+  "config": {
+    "process-timeout": 0,
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "SmartRaya\\IPPanelLaravel\\IPPanelServiceProvider"
+      ],
+        "aliases": {
+            "IPPanel": "SmartRaya\\IPPanelLaravel\\Facades\\IPPanel"
+        }
+    }
+  }
+}
