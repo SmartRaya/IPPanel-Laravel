@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'api_key'  => env('IPPANEL-API', 'Default'),                      
+    'api_key'  => env('IPPANEL_API', 'Default'),                      
 ];
